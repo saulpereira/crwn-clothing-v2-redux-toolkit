@@ -4,10 +4,11 @@ import { createSlice } from '@reduxjs/toolkit';
 
 const INITIAL_STATE = {
   currentUser: null,
+  test: { a: 1 }
 };
 
 export const userSlice = createSlice({
-  name: 'users',
+  name: 'user',
   initialState: INITIAL_STATE,
   reducers: {
     setCurrentUser(state, action) {
@@ -18,4 +19,4 @@ export const userSlice = createSlice({
 
 export const { setCurrentUser } = userSlice.actions;
 
-export const userReduce = userSlice.reducer;
+export const userReducer = userSlice.reducer;
